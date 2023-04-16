@@ -54,9 +54,8 @@ const ListFilme = () => {
                 <td><img src={filme.capa_url} alt="Capa do Filme" /></td>
                 <td>{filme.titulo}</td>
                 <td>{filme.sinopse}</td>
-                <td>{filme.data_lancamento}</td>
+                <td>{new Date(filme.data_lancamento).toLocaleDateString('pt-BR')}</td>
                 <td>{filme.genero}</td>
-                
                 <td><a href={filme.trailer}>Link para o trailer</a></td>
                 <td>
                   <Link
@@ -75,7 +74,7 @@ const ListFilme = () => {
                     to={`edit/${filme._id}`}
                     className="button is-info is-small mr-1"
                   >
-                    +infos
+                    +Detalhes
                   </Link>
                 </td>
               </tr>

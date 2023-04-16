@@ -10,6 +10,7 @@ const AddFilme = () => {
   const [data_lancamento, setDataLancamento] = useState("2000-01-01");
   const [genero, setGenero] = useState("Ação");
   const [trailer, setTrailer] = useState("https://youtube.com");
+  
   const navigate = useNavigate();
 
   const saveFilme = async (e) => {
