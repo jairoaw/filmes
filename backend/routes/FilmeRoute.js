@@ -11,7 +11,7 @@ import {
 const router = express.Router();
 
 // associa as rotas ao seu método do Controller
-router.get('/filmes', getFilmes);
+router.get('/filmes', getFilmes); //index
 router.get('/filmes/:id', getFilmeById);
 router.post('/filmes', saveFilme);
 router.patch('/filmes/:id', updateFilme);

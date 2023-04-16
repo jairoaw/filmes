@@ -23,6 +23,8 @@ app.use(cors());
 
 //Permitir enviar dados para a App no formato JSON
 app.use(express.json());
+
+// routes
 app.use(FilmeRoute);
 
 // Inicia o servidor backend na porta '5000'
