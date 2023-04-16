@@ -21,11 +21,11 @@ rapidamente o funcionamento deste aplicativo. Isso irá ajudar nos testes de sua
 sugestão, veja os softwares ApowerMirror e OBS Studio
 
 
-### Roteiro de instalação e execução
+### Roteiro de instalação e execução:
 
 ### Backend (contem o código do servidor node.js)
 
-criar a pasta do projeto "filmes";
+1- criar a pasta do projeto "filmes";
 
 entrar na pasta filmes;
 
