@@ -5,7 +5,7 @@ import {
     saveFilme,
     updateFilme,
     deleteFilme,
-    //showFilme
+    showFilme
 } from "../controllers/FilmeController.js";
 
 const router = express.Router();
@@ -16,6 +16,6 @@ router.get('/filmes/:id', getFilmeById);
 router.post('/filmes', saveFilme);
 router.patch('/filmes/:id', updateFilme);
 router.delete('/filmes/:id', deleteFilme);
-//router.get('/filmes/:id/show', showFilme);
+router.get('/filmes/:id/show', showFilme);
 
 export default router;

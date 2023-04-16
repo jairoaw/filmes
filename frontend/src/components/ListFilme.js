@@ -71,6 +71,12 @@ const ListFilme = () => {
                   >
                     Apagar
                   </button>
+                  <Link
+                    to={`edit/${filme._id}`}
+                    className="button is-info is-small mr-1"
+                  >
+                    +infos
+                  </Link>
                 </td>
               </tr>
             ))}

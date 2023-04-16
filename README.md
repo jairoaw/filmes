@@ -1,14 +1,21 @@
 ## Front-end
 ● Dividir a aplicação em componentes React
+
 ● Utilizar estados com React Hooks
+
 ● Fazer o gerenciando rotas com React Router (deve ter pelo menos 2 rotas)
+
 ● Acessar uma API com o Axios
 
 ## Back-end
 ● Criar uma API RESTful usando o Node.js e o Express.js
+
 ● Fazer a persistência de dados com o MongoDB (podem usar o mongoose)
+
+
 Desenvolva o backend em Node com as funcionalidades necessárias para que possa ser integrado
 com sua aplicação React.
+
 OBS: Faça um pequeno vídeo (cujo link deve ser compartilhado em um arquivo de texto) explicando
 rapidamente o funcionamento deste aplicativo. Isso irá ajudar nos testes de sua aplicação. Como
 sugestão, veja os softwares ApowerMirror e OBS Studio
