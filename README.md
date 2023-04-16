@@ -25,70 +25,73 @@ sugestão, veja os softwares ApowerMirror e OBS Studio
 
 ### Backend (contem o código do servidor node.js)
 
-1- criar a pasta do projeto "filmes";
+1- Usando Powershell do Windows, criar a pasta do projeto "filmes";
 
-entrar na pasta filmes;
+2- entrar na pasta filmes;
 
-criar a pasta backend;
+3- criar a pasta backend;
 
-entrar na pasta backend;
+4- entrar na pasta backend;
 
-iniciar o projeto: 
+5- iniciar o projeto: 
 ~~~javascript
 npm init -y
 ~~~
 
-instalar mongoose, express e cors: 
+6- instalar mongoose, express e cors: 
 ~~~javascript
 npm i express mongoose cors
 ~~~
 
-instalar nodemon em modo global: 
+7- instalar nodemon em modo global: 
 ~~~javascript
 npm i -g nodemon
 ~~~
-adicionar "ES6 Module Syntax" no arquivo package.json: "type": "module",
 
-criar o index.js que contem as informações dos pacotes e da conexao com o banco mongodb;
+8- adicionar "ES6 Module Syntax" no arquivo package.json: "type": "module",
 
-#### Criação das rotas
+9- criar o index.js que contem as informações dos pacotes e da conexao com o banco mongodb;
 
-criar a pasta routes;
+#### Criação das rotas:
 
-entrar na pasta routes;
+10- Usando Powershell do Windows, criar a pasta backend/routes;
 
-criar o arquivo FilmeRoute.js
+11- entrar na pasta routes;
 
-#### Criação do model
+12- criar o arquivo FilmeRoute.js
+
+#### Criação do model:
 
 "O Schema permite definir os campos armazenados em cada documento, junto com seus requisitos de  validação e valores padrão"
 
-criar a pasta models;
+13- criar a pasta backend/models;
 
-entrar na pasta models;
+14- entrar na pasta models;
 
-criar o arquivo FilmeModel.js
+15- criar o arquivo FilmeModel.js
 
 #### Criação do controller
 
 "Um Controller irá coordenar as ações referentes à esse Model."
 
-criar a pasta controllers;
+16- criar a pasta backend/controllers;
 
-entrar na pasta controllers;
+17- entrar na pasta controllers;
 
-criar o arquivo FilmeController.js
+18- criar o arquivo FilmeController.js
 
-iniciar o servidor na porta 5000: entrar na pasta backend (onde está o index.js) e executar no terminal: 
+19- iniciar o servidor na porta 5000: entrar na pasta backend (onde está o index.js) e executar no terminal do Powershell: 
 ~~~ javascript
 nodemon index
 ~~~
 
-Se estiver rodando, aparecerá no terminal: 
-_"Exemplo de aplicativo ouvindo a porta 5000"
-"conectado no banco..."_
+Se estiver rodando, aparecerá no terminal:
 
-##################################################################################################################################
+"Aplicativo ouvindo na porta 5000"
+
+"conectado no banco MongoDB Atlas..."
+
+################################################################################################
 
 ### Frontend
 

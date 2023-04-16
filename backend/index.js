@@ -16,7 +16,7 @@ mongoose.connect(uri,
 
 const db = mongoose.connection;
 db.on('error', (error) => console.log(error));
-db.once('open', () => console.log('Conectado no banco com sucesso!'));
+db.once('open', () => console.log('conectado no banco MongoDB Atlas...'));
 
 //Permite o uso do CORS (acesso a domínios externos da nossa API)
 app.use(cors());
@@ -27,5 +27,5 @@ app.use(FilmeRoute);
 
 // Inicia o servidor backend na porta '5000'
 app.listen(5000, () => {
-    console.log("Aplicativo ouvindo a porta 5000");
+    console.log("Aplicativo ouvindo na porta 5000");
 });
