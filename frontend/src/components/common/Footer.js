@@ -5,8 +5,11 @@ const Footer = () => {
 	return (
 		<div className="container">
 			Curso de ADS - Disciplina de Prática Profissional Integrada I - 1/2023
+			<h1><a href={link} target={target}>Link do site</a></h1>
+			
 		</div>
 	);
 };
 
 export default Footer;
+

@@ -45,6 +45,7 @@ const ListFilme = () => {
               <th>Data Lançamento</th>
               <th>Gênero</th>
               <th>Trailer</th>
+              <th>Opções</th>
             </tr>
           </thead>
           <tbody>
@@ -60,7 +61,7 @@ const ListFilme = () => {
                 <td>
                   <Link
                     to={`edit/${filme._id}`}
-                    className="button is-info is-small mr-1"
+                    className="button is-info is-small"
                   >
                     Editar
                   </Link>
@@ -70,12 +71,6 @@ const ListFilme = () => {
                   >
                     Apagar
                   </button>
-                  <Link
-                    to={`edit/${filme._id}`}
-                    className="button is-info is-small mr-1"
-                  >
-                    +Detalhes
-                  </Link>
                 </td>
               </tr>
             ))}
