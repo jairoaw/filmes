@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 
 // Define o schema do filme no mongodb
-const filmeSchema = new mongoose.Schema({
+
+const Filme = new mongoose.Schema({
   titulo: {
     type: String,
     required: true, // campo obrigatório
@@ -32,15 +33,10 @@ const filmeSchema = new mongoose.Schema({
   trailer: {
     type: String,
     required: true,
-    validate: {
-      validator: function (v) {
-        // valida se o valor é um link válido para um vídeo do YouTube
-        return /^https:\/\/www\.youtube\.com\/watch\?v=[a-zA-Z0-9_-]{11}$/.test(v);
-      },
-      message: "O campo {PATH} deve ser um link válido para um vídeo do YouTube."
-    }
+    trim: true,
+    maxlength: 1000
   }
 });
 
 // Registra o model Filme em nossa aplicação informando seu schema
-export default mongoose.model("Filme", filmeSchema);
+export default mongoose.model('Filmes', Filme);

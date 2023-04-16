@@ -39,21 +39,25 @@ const ListFilme = () => {
           <thead>
             <tr>
               <th>ID</th>
-              <th>Dia da Semana</th>
-              <th>Cardápio</th>
-              <th>Turno</th>
-              <th>Data de Cadastro</th>
-              <th>Ações</th>
+              <th>Capa</th>
+              <th>Título</th>
+              <th>Sinopse</th>
+              <th>Data Lançamento</th>
+              <th>Gênero</th>
+              <th>Trailer</th>
             </tr>
           </thead>
           <tbody>
             {filmes.map((filme, index) => (
               <tr key={filme._id}>
                 <td>{index + 1}</td>
-                <td>{filme.dia}</td>
-                <td>{filme.descricao}</td>
-                <td>{filme.turno}</td>
-                <td>{filme.createdAt}</td>
+                <td><img src={filme.capa_url} alt="Capa do Filme" /></td>
+                <td>{filme.titulo}</td>
+                <td>{filme.sinopse}</td>
+                <td>{filme.data_lancamento}</td>
+                <td>{filme.genero}</td>
+                
+                <td><a href={filme.trailer}>Link para o trailer</a></td>
                 <td>
                   <Link
                     to={`edit/${filme._id}`}

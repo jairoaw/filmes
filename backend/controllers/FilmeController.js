@@ -1,71 +1,51 @@
 import Filme from "../models/FilmeModel.js";
 
-// Listar todos os filmes
 export const getFilmes = async (req, res) => {
     try {
         const filmes = await Filme.find();
         res.json(filmes);
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        res.status(500).json({message: error.message});
     }
-};
+}
 
-// Listar um filme pelo ID
 export const getFilmeById = async (req, res) => {
     try {
         const filme = await Filme.findById(req.params.id);
-        if (filme) {
-            res.json(filme);
-        } else {
-            res.status(404).json({ message: "Filme não encontrado" });
-        }
+        res.json(filme);
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        res.status(404).json({message: error.message});
     }
-};
+}
 
-// Adicionar um novo filme
 export const saveFilme = async (req, res) => {
     const filme = new Filme(req.body);
     try {
-        const insertedFilme = await filme.save();
-        res.status(201).json(insertedFilme);
+        const insertedfilme = await filme.save();
+        res.status(201).json(insertedfilme);
     } catch (error) {
-        res.status(400).json({ message: error.message });
+        res.status(400).json({message: error.message});
     }
-};
+}
 
-
-// Atualizar um filme pelo ID
 export const updateFilme = async (req, res) => {
     try {
-        const updatedFilme = await Filme.findByIdAndUpdate(req.params.id, req.body, {
-            new: true,
-        });
-        if (updatedFilme) {
-            res.json(updatedFilme);
-        } else {
-            res.status(404).json({ message: "Filme não encontrado" });
-        }
+        const updatedfilme = await Filme.updateOne({_id:req.params.id}, {$set: req.body});
+        res.status(200).json(updatedfilme);
     } catch (error) {
-        res.status(400).json({ message: error.message });
+        res.status(400).json({message: error.message});
     }
-};
+}
 
-
-// Apagar um filme pelo ID
 export const deleteFilme = async (req, res) => {
     try {
-        const deletedFilme = await Filme.findByIdAndDelete(req.params.id);
-        if (deletedFilme) {
-            res.json(deletedFilme);
-        } else {
-            res.status(404).json({ message: "Filme não encontrado" });
-        }
+        const deletedfilme = await Filme.deleteOne({_id:req.params.id});
+        res.status(200).json(deletedfilme);
     } catch (error) {
-        res.status(400).json({ message: error.message });
+        res.status(400).json({message: error.message});
     }
-};
+}
+
 
 export const showFilme = async (req, res) => {
     try {
