@@ -21,11 +21,13 @@ rapidamente o funcionamento deste aplicativo. Isso irá ajudar nos testes de sua
 sugestão, veja os softwares ApowerMirror e OBS Studio
 
 
+#####################################################################################
+
 ### Roteiro de instalação e execução:
 
 ### Backend (contem o código do servidor node.js)
 
-1- Usando Powershell do Windows, criar a pasta do projeto "filmes";
+1- Usando PowerShell do Windows, criar a pasta do projeto "filmes";
 
 2- entrar na pasta filmes;
 
@@ -54,7 +56,7 @@ npm i -g nodemon
 
 #### Criação das rotas:
 
-10- Usando Powershell do Windows, criar a pasta backend/routes;
+10- Usando PowerShell do Windows, criar a pasta backend/routes;
 
 11- entrar na pasta routes;
 
@@ -80,7 +82,7 @@ npm i -g nodemon
 
 18- criar o arquivo FilmeController.js
 
-19- iniciar o servidor na porta 5000: entrar na pasta backend (onde está o index.js) e executar no terminal do Powershell: 
+19- iniciar o servidor na porta 5000: entrar na pasta backend (onde está o index.js) e executar no terminal do PowerShell: 
 ~~~ javascript
 nodemon index
 ~~~
@@ -93,43 +95,43 @@ Se estiver rodando, aparecerá no terminal:
 
 #####################################################################################
 
-## Frontend
+### Frontend
 
-entrar na pasta filmes;
+1- Usando o PowerShell, entrar na pasta filmes;
 
-criar a pasta frontend
+2- criar a pasta frontend
 
-entrar na pasta frontend
+3- entrar na pasta frontend
 
-criar o projeto: 
+4- criar o projeto: 
 ~~~ javascript
 npx create-react-app frontend
 ~~~
 
-instalar dependencias: 
+5- instalar dependencias: 
 ~~~ javascript
 npm i react-router-dom axios bulma
 ~~~
 (bulma css)
 
-iniciar o projeto: (irá abrir o navegador na porta default 3000)
+6- iniciar o projeto: (irá abrir o navegador na porta default 3000)
 ~~~ javascript
 npm start
 ~~~
 
 #### Criação dos componentes
 
-criar a pasta src/components;
+7- criar a pasta frontend/src/components;
 
-entrar na pasta src/components;
+8- entrar na pasta src/components;
 
-criar o arquivo AddFilme.js (adicionar filmes);
+9- criar o arquivo AddFilme.js (adicionar filmes);
 
-criar o arquivo ListFilme.js (listar filmes);
+10- criar o arquivo ListFilme.js (listar filmes);
 
-criar o arquivo EditFilme.js (editar filmes);
+11- criar o arquivo EditFilme.js (editar filmes);
 
-configurar App.js em frontend/src com as rotas para HOME, ADD e EDIT
+12- configurar App.js em frontend/src com as rotas para HOME, ADD e EDIT
 
 #### Testes
 

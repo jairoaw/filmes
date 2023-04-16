@@ -51,9 +51,8 @@ const EditFilme = () => {
           Home
         </Link>
         <form onSubmit={updateFilme}>
-          
-        <div className="field">
-          <label className="label">Título</label>
+          <div className="field">
+            <label className="label">Título</label>
             <div className="control">
               <input
                 type="text"
@@ -62,10 +61,10 @@ const EditFilme = () => {
                 onChange={(e) => setTitulo(e.target.value)}
                 placeholder="Título do filme"
               />
+            </div>
           </div>
-        </div>
-        <div className="field">
-          <label className="label">Sinopse</label>
+          <div className="field">
+            <label className="label">Sinopse</label>
             <div className="control">
               <input
                 type="text"
@@ -74,10 +73,10 @@ const EditFilme = () => {
                 onChange={(e) => setSinopse(e.target.value)}
                 placeholder="Sinopse do filme"
               />
+            </div>
           </div>
-        </div>  
-        <div className="field">
-          <label className="label">Url da imagem da capa</label>
+          <div className="field">
+            <label className="label">Url da imagem da capa</label>
             <div className="control">
               <input
                 type="text"
@@ -86,20 +85,60 @@ const EditFilme = () => {
                 onChange={(e) => setCapaUrl(e.target.value)}
                 placeholder="capa do filme"
               />
+            </div>
           </div>
-        </div>  
-
-          
+          <div className="field">
+            <label className="label">Data de lançamento</label>
+            <div className="control">
+              <input
+                type="date"
+                className="input"
+                value={data_lancamento}
+                onChange={(e) => setDataLancamento(e.target.value)}
+                placeholder="Data de lançamento do filme"
+              />
+            </div>
+          </div>
+          <div>
+            <label htmlFor="genero">Gênero:</label>
+            <select
+              id="genero"
+              value={genero}
+              onChange={(e) => setGenero(e.target.value)}
+            >
+              <option value="Ação">Ação</option>
+              <option value="Comédia">Comédia</option>
+              <option value="Drama">Drama</option>
+              <option value="Ficção científica">Ficção científica</option>
+              <option value="Terror">Terror</option>
+            </select>
+          </div>
+          <div className="field">
+            <label className="label">Trailer</label>
+            <div className="control">
+              <input
+                type="text"
+                className="input"
+                value={trailer}
+                onChange={(e) => setTrailer(e.target.value)}
+                placeholder="Trailer do filme"
+              />
+            </div>
+          </div>
           <div className="field">
             <div className="control">
               <button type="submit" className="button is-success">
                 Atualizar
               </button>
+              <Link to="/" className="button is-black">
+                Voltar
+              </Link>
             </div>
           </div>
         </form>
       </div>
     </div>
   );
+  
 };
 export default EditFilme;
