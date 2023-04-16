@@ -91,9 +91,9 @@ Se estiver rodando, aparecerá no terminal:
 
 "conectado no banco MongoDB Atlas..."
 
-################################################################################################
+#####################################################################################
 
-### Frontend
+## Frontend
 
 entrar na pasta filmes;
 
