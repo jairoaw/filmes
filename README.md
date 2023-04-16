@@ -22,7 +22,11 @@ sugestão, veja os softwares ApowerMirror e OBS Studio
 
 
 #####################################################################################
-
+### Publicado em:
+´´´code
+https://filmes-git-main-jairoaw.vercel.app/
+´´´´
+#####################################################################################
 ### Roteiro de instalação e execução:
 
 ### Backend (contem o código do servidor node.js)
