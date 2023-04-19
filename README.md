@@ -22,6 +22,10 @@ sugestão, veja os softwares ApowerMirror e OBS Studio
 
 
 #####################################################################################
+
+### Demonstração do funcionamento
+
+https://youtu.be/e2si2dj6UW0
 ### Publicado em:
 
 https://filmes-git-main-jairoaw.vercel.app/
@@ -143,6 +147,7 @@ adicionar, editar, listar e deletar está funcionando (se a conexão com o mongo
 
 Botão "Home" vai pra tela inicial;
 
-Botão "Adicionar novo" abre um formulário para cadastrar;
+Botão "Adicionar novo" abre um formulário para cadastrar e já preenche ocom valores default de título, Sinopse, url_capa, data de lançamento, genero e um link do youtube;
+
 
 Botão "Editar" abre um formulário para editar;
